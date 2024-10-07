@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dacodes"
+name = "app"
 version = "0.1.0"
 description = "\"A Python backend application demonstrating a RESTful API using FastAPI\""
 authors = ["Fabio Aguirre <faanagor@gmail.com>"]
@@ -9,6 +9,17 @@ readme = "README.md"
 python = "^3.11"
 fastapi = "^0.115.0"
 uvicorn = "^0.31.0"
+httpx = "^0.27.2"
+pandas = "^2.2.3"
+pytest = "^8.3.3"
+pydantic = "^2.9.2"
+asyncio = "^3.4.3"
+pytest-asyncio = "^0.24.0"
+redis = "^5.1.1"
+rq = "^1.16.2"
+
+[tool.poetry.scripts]
+start = "app.main:start"
 
 
 [build-system]
